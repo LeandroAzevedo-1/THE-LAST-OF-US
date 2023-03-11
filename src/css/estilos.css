@@ -3,7 +3,6 @@ body{
     max-width: 1280px;
     margin: 0 auto;
 }
-
 main::after{
     content: '';
     min-height: 100vh;
@@ -14,35 +13,28 @@ main::after{
     
 z-index: -1;
 }
-
 .conteudo{
     display: flex;
     flex-direction: column;
     min-height: 100vh;
     justify-content: space-evenly;
      }
-
-
-
 .informacoes .logo {
 filter: invert(1);
 margin-bottom: 80px;
 
 }
-
 .informacoes .descricao{
     width: 49%;
     font-size: 24px;
     color: #ffff;
     line-height: 30px;
 }
-
 .conteudo .botoes-carrossel{
    display: flex;
     justify-content: center;
     gap: 20px;
 }
-
 .botoes-carrossel .botao{
     background-attachment: #fff;
     width: 15px;
@@ -52,13 +44,9 @@ margin-bottom: 80px;
     cursor: pointer;
     border-color: #fff;
 }
-
 .botoes-carrossel .botao.selecionado{
     background-color: #1d8346;
 }
-
-/* A partir daqui */
-
 .menu-lateral{
    position: fixed;
     top: 0;
@@ -69,24 +57,19 @@ margin-bottom: 80px;
     align-items: center;
     min-height: 100vh;
 }
-
 .menu-lateral ul{
    display: flex; 
    flex-direction: column;
 }
-
 .menu-lateral .icone{
     width: 30px;
     margin: 10px;
     filter: invert(1);
     transition: 0.3s ease-in-out;
 }
-
 .menu-lateral .icone:hover{
     transform: scale(1.2);
 }
-
-
 .carrossel{
     position: fixed;
     top: 0;
@@ -94,7 +77,6 @@ margin-bottom: 80px;
     width: 100%;
     z-index: -1;
 }
-
 .carrossel .image{
     width: 100%;
     height: 100vh;
@@ -102,7 +84,6 @@ margin-bottom: 80px;
     display: none;
     animation: mudarimagem 0.7s 
 }
-
 .carrossel .image.ativa{
   display: block;
 }
